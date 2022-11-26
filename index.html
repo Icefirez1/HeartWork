@@ -24,7 +24,8 @@
       crossorigin="anonymous"
     />
 
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!--<link href="..\assets\dist\css\bootstrap.min.css" rel="stylesheet" />-->
+
 
     <style>
       .bd-placeholder-img {
@@ -78,16 +79,38 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+      img{
+        border-radius: 25px;
+      }
+      .background_stuff{
+        border-color:rgba(152,67,158,255);
+      }
+      .background_img_1{
+        border-width:20px;
+        border-style:solid;
+        border-color: rgb(243,143,172);
+      }
+      .background_img_2{
+        border-width:20px;
+        border-style:solid;
+        border-color: rgb(104,148,65);
+      }
+      .background_img_3{
+        border-width:20px;
+        border-style:solid;
+        border-color: rgb(86,147,190);
+      }
     </style>
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet" />
   </head>
-  <body>
+  <body >
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class = "background_stuff"></div>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(189,170,220);" >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">HeartWork</a>
+          <a class="navbar-brand" href="#">HeartWork Studio</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -104,13 +127,16 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
+              <!--
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li>
+              -->
             </ul>
+            <!--
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
@@ -122,6 +148,8 @@
                 Search
               </button>
             </form>
+            -->
+            <img src="logo.png" alt="Logo" width="50" height="50">
           </div>
         </div>
       </nav>
@@ -153,7 +181,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <svg
+            <!--<svg
               class="bd-placeholder-img"
               width="100%"
               height="100%"
@@ -163,66 +191,69 @@
               focusable="false"
             >
               <rect width="100%" height="100%" fill="#777" />
-            </svg>
+            </svg>-->
+            <img
+            class = "background_img_1" 
+            src="Background_cover.webp"
+            width="100%"
+            height="100%"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            alt="Girl in a jacket">
 
             <div class="container">
-              <div class="carousel-caption text-start">
+              <div class="carousel-caption text-start" >
                 <h1>Who are we?</h1>
                 <p>
                   Information about us below!
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="cover/info_page.html">Click Here!</a>
+                  <a class="btn btn-lg btn-outline-light" style="background-color:rgb(243,143,172);"href="cover/info_page.html">Click Here!</a>
                 </p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
+            <img
+            class = "background_img_2" 
+            src="background_img_teach.jpg"
+            width="100%"
+            height="100%"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            alt="Girl in a jacket">
 
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>
-                  Some representative placeholder content for the second slide
-                  of the carousel.
+                <h1>Want to become an instructor?</h1>
+                <p> 
+                  You too can lead one of our workshops. Click here to sign up!
                 </p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                <p><a class="btn btn-lg btn-outline-light" style="background-color:rgb(104,148,65);" href="https://docs.google.com/forms/d/e/1FAIpQLSfD1Lh0Ss9om0C8w4R5e-DXILp4tfE90CMZW7AFInBqgZoovQ/viewform">Form Link</a></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
+            <img
+            class = "background_img_3" 
+            src="img_background_3.jpg"
+            width="100%"
+            height="100%"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            alt="Girl in a jacket">
 
             <div class="container">
               <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
+                <h1>Come join us!</h1>
                 <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
+                  Click here to see our next workshop dates!
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                  <a class="btn btn-lg btn-outline-light" style="background-color:rgb(86,147,190);" href="https://www.google.com/calendar">Future Dates</a>
                 </p>
               </div>
             </div>
@@ -256,9 +287,11 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <svg
+  
+            <img
               class="bd-placeholder-img rounded-circle"
               width="140"
+              src="socials.webp"
               height="140"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
@@ -266,25 +299,27 @@
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
+            <!--
               <title>Placeholder</title>
               <rect width="100%" height="100%" fill="#777" />
               <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
+            -->
+            </img>
 
-            <h2 class="fw-normal">Heading</h2>
+            <h2 class="fw-normal">Instagram</h2>
             <p>
-              Some representative placeholder content for the three columns of
-              text below the carousel. This is the first column.
+              Follow us on instagram!
             </p>
             <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+              <a class="btn btn-secondary" href="https://www.instagram.com/_heartworkstudio/">Instagram &raquo;</a>
             </p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <svg
+            <img
               class="bd-placeholder-img rounded-circle"
               width="140"
+              src="editorial.webp"
               height="140"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
@@ -292,25 +327,22 @@
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
+            </img>
 
-            <h2 class="fw-normal">Heading</h2>
+            <h2 class="fw-normal">Editorial Page</h2>
             <p>
-              Another exciting bit of representative placeholder content. This
-              time, we've moved on to the second column.
+              See updates on what is happening with us currently!
             </p>
             <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+              <a class="btn btn-secondary" href="https://www.cnn.com/cnn10">View here &raquo;</a>
             </p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <svg
+            <img
               class="bd-placeholder-img rounded-circle"
               width="140"
+              src="map.jpg"
               height="140"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
@@ -318,18 +350,14 @@
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
+            </img>
 
-            <h2 class="fw-normal">Heading</h2>
+            <h2 class="fw-normal">Find Us!</h2>
             <p>
-              And lastly this, the third column of representative placeholder
-              content.
+              Find location of the next immediate workshop!
             </p>
             <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+              <a class="btn btn-secondary" href="https://maps.google.com/">Map&raquo;</a>
             </p>
           </div>
           <!-- /.col-lg-4 -->
@@ -343,18 +371,18 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading fw-normal lh-1">
-              First featurette heading.
-              <span class="text-muted">It’ll blow your mind.</span>
+              Featured Artwork!
+              <span class="text-muted">Be Perfect by Naomi Pagar</span>
             </h2>
             <p class="lead">
-              Some great placeholder content for the first featurette here.
-              Imagine some exciting prose here.
+              Naomi Pagar's painting has the great meaning. THe meaning behind this piece would be that the girl is being consumed by the expectations and standards around her that the world and society and even herself have put upon her; the need to be perfect and beautiful and have no flaws or blemishes. The inspiration for this piece directly correlates to teh pressures of perfection Naomi has felt in her own life and that young teen girls in general feel by the expectations that society and social media press on us.
             </p>
           </div>
           <div class="col-md-5">
-            <svg
+            <img
               class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
               width="500"
+              src = "naomi_artwork.jpg"
               height="500"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
@@ -362,13 +390,10 @@
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+            </img>
           </div>
         </div>
-
+        <!--
         <hr class="featurette-divider" />
 
         <div class="row featurette">
@@ -435,7 +460,8 @@
 
         <hr class="featurette-divider" />
 
-        <!-- /END THE FEATURETTES -->
+         /END THE FEATURETTES
+        -->
       </div>
       <!-- /.container -->
 
